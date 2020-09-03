@@ -14,7 +14,7 @@ let counter = 0;
 module.exports = (message, publishMessageOnQueue, markAsProcessed) => {
   counter++;
   const newMessage = {
-    order_id: message.order_id,
+    // order_id: message.order_id,
     user_dni: message.user_dni,
     user_name: message.user_name,
     total_orders_created: counter,
