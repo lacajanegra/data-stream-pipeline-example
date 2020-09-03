@@ -22,9 +22,8 @@ class CustomScript extends BootScript {
       version: packageJSON.version,
     };
 
-    logger.info(emoji.emojify(`[setup] Start at:   ${chalk.bold.green(settings.createdAt)}`));
+
     logger.info(emoji.emojify(`[setup] Name:       ${chalk.bold.green(settings.name)}`));
-    logger.info(emoji.emojify(`[setup] Author:     ${chalk.bold.green(settings.author)}`));
     logger.info(emoji.emojify(`[setup] Version:    ${chalk.bold.green(settings.version)}`));
 
     if (CONFIG.exists('DOCKER_TAG')) {
